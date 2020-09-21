@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Evagames</title>
+    <title>EvaGames</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,19 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="header__bar row">
+        <h1 class="grid-6"><a href="/">EVAGAMES</a></h1>
+        <div class="user_nav grid-6">
+          <a class="post" href="/tweets/new">レビューする</a>
+        </div>
+      </div>
+    </header>>
     <%= yield %>
+    <footer>
+      <p>
+        Copyright EVAGAMES 2020.
+      </p>
+    </footer>
   </body>
 </html>
